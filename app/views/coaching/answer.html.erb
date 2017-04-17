@@ -1,0 +1,9 @@
+<% if @query == "I am going to work right now!" %>
+  <h2>Good</h2>
+<% elsif @query.include? "?" %>
+  <h2>Silly question, get dressed and go to work!</h2>
+<% else %>
+  <h2>I don't care, get dressed and go to work!</h2>
+<% end %>
+
+<%= link_to "Ask another question", coaching_ask_path %>
